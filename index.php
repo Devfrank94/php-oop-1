@@ -15,6 +15,10 @@
 
     }
 
+    public function getFullInfo(){
+      return 'Titolo: ' . $this->title . ' - Titolo Originale: ' . $this->title_original . '  - Attori: ' . $this->actors. '  - Durata: ' . $this->duration . ' min';
+    }
+
 
   }
 
@@ -23,10 +27,15 @@
   $spiderman = new Movie("Spiderman", "Spiderman", "Tom Holland", 120);
   $theTransporter = new Movie("Il Trasportatore", "The Transporter", "Jason Statham", 110);
 
-
+  // vardump semplice
   var_dump($ilGladiatore);
   var_dump($spiderman);
   var_dump($theTransporter);
+
+  // vardump con methods
+  var_dump($ilGladiatore->getFullInfo());
+  var_dump($spiderman->getFullInfo());
+  var_dump($theTransporter->getFullInfo());
 ?>
 
 <!DOCTYPE html>
