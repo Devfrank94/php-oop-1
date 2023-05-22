@@ -5,13 +5,28 @@
     public $title_original;
     public $actors;
     public $duration;
+
+    // definisco un costruttore
+    function __construct($_title, $_title_original, $_actors, $_duration){
+      $this->title = $_title;
+      $this->title_original = $_title_original;
+      $this->actors = $_actors;
+      $this->duration = $_duration .' min';
+
+    }
+
+
   }
 
   // istanzio 3 film
-  $ilGladiatore = new Movie();
-  $spiderman = new Movie();
-  $theTransporter = new Movie();
+  $ilGladiatore = new Movie("Il Gladiatore", "Gladiator", "Russel Crowe", 140);
+  $spiderman = new Movie("Spiderman", "Spiderman", "Tom Holland", 120);
+  $theTransporter = new Movie("Il Trasportatore", "The Transporter", "Jason Statham", 110);
 
+
+  var_dump($ilGladiatore);
+  var_dump($spiderman);
+  var_dump($theTransporter);
 ?>
 
 <!DOCTYPE html>
