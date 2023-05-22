@@ -1,6 +1,16 @@
 <?php
 
-  
+  class Movie {
+    public $title;
+    public $title_original;
+    public $actors;
+    public $duration;
+  }
+
+  // istanzio 3 film
+  $ilGladiatore = new Movie();
+  $spiderman = new Movie();
+  $theTransporter = new Movie();
 
 ?>
 
